@@ -2,7 +2,7 @@
 # gone through the Proposal process
 # Triggered by adding the `feature-request` label to an issue
 
-name: 🚪 Check Feature PR
+name: 馃毆 Check Feature PR
 
 on:
   pull_request:
@@ -10,14 +10,14 @@ on:
 
 jobs:
   close-feature-pr:
-    name: 🚪 Check Feature PR
+    name: 馃毆 Check Feature PR
     if: github.repository == 'remix-run/react-router' && github.event.label.name == 'feature-request'
     runs-on: ubuntu-latest
     steps:
-      - name: ⬇️ Checkout repo
+      - name: 猬囷笍 Checkout repo
         uses: actions/checkout@v4
 
-      - name: 🚪 Close PR
+      - name: 馃毆 Close PR
         env:
           GH_TOKEN: ${{ github.token }}
         permissions:
